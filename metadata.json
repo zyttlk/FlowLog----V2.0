@@ -1,0 +1,5 @@
+{
+  "name": "FlowLog",
+  "description": "A neumorphic, flow-state focused task management application with calendar and statistics.",
+  "requestFramePermissions": []
+}

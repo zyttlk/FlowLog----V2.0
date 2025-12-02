@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心流日历 FlowLog</title>
+  
+  <!-- 字体链接 (保留在线，离线时会回退到系统字体，不影响使用) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- 核心修改：这里不需要 importmap 和 cdn 了，交给 Vite 打包处理 -->
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- 核心修改：直接指向当前目录下的 index.tsx -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

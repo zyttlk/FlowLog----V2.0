@@ -1,0 +1,76 @@
+/* 1. Tailwind 基础指令 (标黄是正常的，不要动) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. 这是一个基础设置，防止双重滚动条 */
+body {
+  background-color: #F7F5F0;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden; 
+}
+
+/* 3. 下面是你原先 HTML 里的自定义样式 (我帮你搬过来了) */
+.font-handwriting {
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+/* 新拟态风格 */
+.neu-flat {
+  background: #F7F5F0;
+  box-shadow: 8px 8px 16px #D9D7D2, -8px -8px 16px #FFFFFF;
+  border-radius: 20px;
+}
+
+.neu-pressed {
+  background: #F7F5F0;
+  box-shadow: inset 6px 6px 12px #D9D7D2, inset -6px -6px 12px #FFFFFF;
+  border-radius: 20px;
+}
+
+.neu-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #F7F5F0;
+  box-shadow: 5px 5px 10px #D9D7D2, -5px -5px 10px #FFFFFF;
+}
+.neu-btn:active {
+  box-shadow: inset 3px 3px 6px #D9D7D2, inset -3px -3px 6px #FFFFFF;
+}
+
+/* 铅笔痕迹动画 */
+.pencil-trace {
+  fill: none;
+  stroke: #A0A0A0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 100 0; 
+  opacity: 0.6;
+}
+
+/* 擦除动画 */
+.erasing {
+  animation: erase 0.8s forwards;
+}
+@keyframes erase {
+  0% { opacity: 1; transform: scale(1); filter: blur(0px); }
+  50% { opacity: 0.5; transform: scale(0.95); filter: blur(2px); }
+  100% { opacity: 0; transform: scale(0.9); filter: blur(10px); }
+}
+
+/* 上浮渐显动画 */
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 隐藏滚动条 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
