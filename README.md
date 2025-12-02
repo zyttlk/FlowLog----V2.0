@@ -1,7 +1,7 @@
 # 🌊 时光印记 (FlowLog) V2.0
 
 > 一个基于 Electron + React + Tailwind CSS 构建的桌面端心流日记应用。
-> 专注于记录、复盘与自我成长，支持数据本地优先与无感云同步。
+> 专注于记录、复盘与自我成长，支持数据浏览器缓存与无感云同步。
 
 <img width="2559" height="1525" alt="屏幕截图 2025-12-02 173603" src="https://github.com/user-attachments/assets/47d5c5c6-2564-4e3b-9609-f02bcf503845" />
 <img width="2559" height="1526" alt="屏幕截图 2025-12-02 173615" src="https://github.com/user-attachments/assets/e3289384-531c-40c3-a4b0-b186fd33258b" />
